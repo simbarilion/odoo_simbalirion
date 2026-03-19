@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_order_form_custom" model="ir.ui.view">
+        <field name="name">sale.order.form.custom</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <!-- поле Ответственный -->
+            <xpath expr="//sheet//group[@name='sale_order_partner_info']" position="inside">
+                <field name="responsible_employee_id"/>
+            </xpath>
+
+            <!-- поле New Field -->
+            <xpath expr="//sheet//group[@name='sale_order_partner_info']" position="inside">
+                <field name="new_field"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

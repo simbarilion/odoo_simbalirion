@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.bak
+*.tmp
+*.log
+
+# Virtual environment
+venv/
+env/
+
+# IDE / PyCharm
+.idea/
+*.iml
+
+# Node / JS
+node_modules/
+
+# Mac / Windows
+.DS_Store
+Thumbs.db
