@@ -6,13 +6,11 @@
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
             <!-- поле Ответственный -->
-            <xpath expr="//sheet//group[@name='sale_order_partner_info']" position="inside">
+            <xpath expr="//field[@name='partner_id']" position="after">
                 <field name="responsible_employee_id"/>
-            </xpath>
-
-            <!-- поле New Field -->
-            <xpath expr="//sheet//group[@name='sale_order_partner_info']" position="inside">
-                <field name="new_field"/>
+                <field name="new_field"
+                       readonly="state == 'sent'"
+                       invisible="state == 'sale'"/>
             </xpath>
         </field>
     </record>
