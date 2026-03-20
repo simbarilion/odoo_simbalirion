@@ -1,6 +1,6 @@
 # noinspection PyStatementEffect
 {
-    "name": "Odoo simbalirion Custom Sale v5",
+    "name": "Odoo simbalirion Custom Sale v10",
     "version": "1.0",
     "summary": "Добавляет обязательное поле сотрудника и поле New Field в Quotation",
     "category": "Sales",
@@ -12,4 +12,3 @@
     "installable": True,
     "application": True,
 }
-
